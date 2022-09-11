@@ -1,0 +1,31 @@
+.bg{
+    background-color: moccasin;
+}
+.logo{
+    color: black !important;
+}
+.logo:hover{
+    color: gray !important;
+}
+.navi{
+    color: black !important;
+}
+.navi:hover{
+    color: gray !important;
+}
+.dots{
+    font-size: 2rem;
+    color: grey;
+}
+@media screen and (max-width: 992px){
+    .dots{
+        display: none;
+    }
+}
+.toggler{
+    background-color: darkolivegreen !important;
+}
+.toggler:hover{
+    transition: 0.25s;
+    background-color: brown !important;
+}
