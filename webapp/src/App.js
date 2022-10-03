@@ -6,7 +6,7 @@ import Main from './main';
 import loginPage from './routes/loginPage';
 import userPage from './routes/userPage';
 import contact from './routes/contact';
-import aboutUs from './routes/aboutUs';
+import About from './routes/aboutUs';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route exact path="/" element={<Main />}/>
         <Route exact path="/loginPage" element={<loginPage />}/>
         <Route exact path="/login?credentials" element={<userPage />}/>
+        <Route exact path="/about" element={<About />}/>
       </Routes>
     </Router>
   );

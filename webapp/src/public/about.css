@@ -1,0 +1,65 @@
+.about{
+    background-color: #363434;
+}
+
+.about > .title{
+    font-size: 80px; 
+    font-family: "Brush Script MT", cursive;
+    color: rgb(248, 222, 222) !important;
+    text-shadow: 0px 2px 4px red;
+
+}
+
+.about > .introduction{
+    border: 1px solid #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+
+}
+
+.about > .MeetUs{
+    font-size: 50px ; 
+    color: white;
+}
+
+
+
+.dash{
+    color: white;
+}
+
+.about > .section{
+    margin-left: 5%;
+    margin-right: 70%;
+    position: relative;
+	border-radius: .4em;
+    color: white;
+
+}
+
+.about > .section:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 9px solid transparent;
+	border-bottom-color: white;
+	border-top: 0;
+	margin-left: -9px;
+	margin-top: -9px;
+}
+
+
+.about > .section > .names{
+    font: 200;
+    background-color: #141413;
+    
+}
+.about > .section > .names > .bulletPoint{
+    list-style-position: outside;
+    border: 1px solid #000040;
+    background-color: #141413 !important;
+}
