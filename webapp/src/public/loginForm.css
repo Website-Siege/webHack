@@ -1,0 +1,28 @@
+label{
+    margin: auto;
+    padding-right: 1rem;
+    height: auto;
+    font-weight: bold;
+}
+input{
+    border-radius: 10px;
+    margin: auto;
+    height: auto;
+}
+.form{
+    display: block;
+    margin: auto;
+    height: auto;
+    color: #e8e6e6 !important;
+}
+.loginPage{
+    background-color: #363434;
+    color: #e8e6e6 !important;
+}
+.loginCard{
+    background-color: #141413;
+}
+.input-container{
+    margin: auto;
+    padding: 0.5rem;
+}
