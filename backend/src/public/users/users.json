@@ -1,0 +1,12 @@
+export const userData = [
+    {
+        "type": "POST",
+        "Content-Type": "application/json",
+        "users": [{
+            "firstName": "Austin",
+            "lastName": "Filoteo",
+            "username": "A-Teo",
+            "password": "password"
+        }]
+    }
+]

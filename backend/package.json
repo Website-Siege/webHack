@@ -1,0 +1,14 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node backend",
+  "main": "main.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "website-siege",
+  "license": "ISC",
+  "dependencies": {
+    "yarn": "^1.22.19"
+  }
+}
