@@ -1,17 +1,14 @@
-.navigate{
-    color: azure !important;
-}
 .bg{
-    background-color: #141413;
+    background-color: moccasin;
 }
 .logo{
-    color: azure;
+    color: black !important;
 }
 .logo:hover{
     color: gray !important;
 }
 .navi{
-    color: azure;
+    color: black !important;
 }
 .navi:hover{
     color: gray !important;
