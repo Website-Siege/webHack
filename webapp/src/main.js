@@ -11,29 +11,12 @@ function Main(){
             <nav>
                 <Navigation />
             </nav>
-
-            <div className='title' id='title'>
-                    Ban Sauce Inc.
+            <div>
+                <p>
+                    This website will be used for hacking
+                </p>
             </div>
-
-            <div className='logoIcon'>
-    
-                <img src='sauceicon.png' alt='placeholder' />
-            
-            </div>
-
-            <div className='contentOne'>
-                S Tier Sauce
-                
-            </div>
-
-            <div className='contentTwo'>
-                The Sauce to Sauce Up Your Sauce
-            </div>
-
-
         </div>
-        
     )
 }
 
