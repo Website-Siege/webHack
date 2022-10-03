@@ -6,7 +6,7 @@ function Main(){
     return(
         <div className='main'>
             <head>
-                <title>Penguin Pears Inc.</title>
+                <title>Ban Sauce Inc.</title>
             </head>
             <nav>
                 <Navigation />
