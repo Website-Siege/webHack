@@ -1,0 +1,75 @@
+.form-container{
+    height: 100vh;
+    width: 95vw;
+}
+ .hi{
+    height: 200px;
+    width: 305px;
+    border-radius: 10px;
+ }
+ .background{
+    background-color: #363434;
+    background-position: top right;
+    background-size: auto;
+}
+.fonts{
+    font-family: "Arial", sans-serif;
+    color: #e8e6e6  ;
+}
+
+.boxcolor{
+    background-color: #141413 ;
+}
+
+.cf{
+    
+    width: 40vw;
+    margin: 0 auto;
+}
+
+
+.names{  
+    position: relative; 
+    top: 10vh;
+    left: 25vw;
+    font-family: "Arial ",  sans-serif;
+} 
+.submitB{
+    font-family: "Arial", sans-serif;
+    position: relative;
+    background-color: #141413 ;   
+    color: white;
+    top: 40px;
+    border-radius: 10px;
+    right: 120px;
+}
+
+.email{
+    position: flex;
+    top: 15vh;
+    left: 23vw;
+    font-family: "Arial ",  sans-serif;
+}
+
+.reqRect{
+    background-color: #e8e6e6;
+    
+}
+
+@media only screen and (max-width: 414px) {
+    .reqRect {
+      height: 15rem;
+    }
+    .name {
+      width: 10rem;
+    }
+    .email {
+      width: 10rem;
+    }
+    .submitB {
+      width: auto;
+    }
+    footer.contactFooter {
+      padding-top: 20rem;
+    }
+    }
