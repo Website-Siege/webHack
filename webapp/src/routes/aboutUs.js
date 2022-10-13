@@ -21,12 +21,17 @@ function About(){
             <p className='dash'>
                 <center>
                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    
+                    
                 </center>
+                <center><img src = {saseLogo} alt="" className='photo' /></center>
+                
             </p>
             
-            <img src = {saseLogo} alt="" className='sase' />
+            
 
             <p className='introduction'>
+
                 <center>
                     For our Kickstarter project, we decided to simulate website hacking. We first create a website with user's login info(user name and password)
                     We then split into two teams, Defence team focuses on how they can secure the website. Attack team will try to hack the website(steal user's login info)
@@ -41,7 +46,7 @@ function About(){
                 <center>Meet Us</center>
             </p>
             
-            <img src = {saseLogo} alt="" className='GroupPhoto' />
+            {/*<img src = {saseLogo} alt="" className='photo' />*/}
 
             <p className='section'>
                 <h2 className='names'>
@@ -51,7 +56,7 @@ function About(){
                     <li>Sophomore</li>
                     <li>Major: Software Engineer</li>
                     <li>Experienced in Kickstarter</li>
-                    <li>Hobbies: Boxing/Coding/Martial Art</li>
+                    <li>Hobbies: Boxing/Coding/Martial Arts</li>
                 </ul>
             </p>
 
@@ -75,7 +80,7 @@ function About(){
                     <li>Sophomore</li>
                     <li>Major: Computer Engineer</li>
                     <li>First time participating in Kickstarter</li>
-                    <li>Hobbies: Archery/Basketball/Watch Anime/Music</li>
+                    <li>Hobbies: Archery/Basketball/Watching Anime/Music</li>
                 </ul>
             </p>
 
@@ -85,9 +90,9 @@ function About(){
                 </h2>
                 <ul className='bulletPoint'>
                     <li>Sophomore</li>
-                    <li>Major: Apply Mathematics</li>
+                    <li>Major: Applied Mathematics</li>
                     <li>First time participating in Kickstarter</li>
-                    <li>Hobbies: Minecraft/Sleep/ Drink Milk(not kidding)</li>
+                    <li>Hobbies: Minecraft/Sleep/Drinking Milk(not kidding)</li>
                 </ul>
             </p>
             <footer>
