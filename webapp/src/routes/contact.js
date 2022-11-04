@@ -21,7 +21,7 @@ function Contact() {
     <div>
     <nav><Navigation /></nav>
     </div>
-    <MDBContainer fluid>
+    <MDBContainer fluid style={{borderRadius: "1rem"}}>
       <MDBRow className='d-flex justify-content-center align-items-center h-100'>
         <MDBCol col='12'>
 

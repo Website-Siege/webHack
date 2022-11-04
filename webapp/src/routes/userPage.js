@@ -1,10 +1,11 @@
 import React from 'react';
-import Navigation from '../components/navbar';
-import Signin from '../components/username';
-import DataFetch from '../components/fetch';
-import Footer from '../components/footer';
-import { MDBCard } from 'mdb-react-ui-kit';
 import { Container } from 'react-bootstrap';
+import Navigation from '../components/navbar';
+import Footer from '../components/footer';
+import Signin from '../components/userComponents/components/username';
+import Bio from '../components/userComponents/bio';
+import Link from '../components/userComponents/links';
+import FactCard from '../components/userComponents/facts';
 import '../public/user.css';
 
 function User(){
@@ -13,60 +14,36 @@ function User(){
             <nav>
                 <Navigation />
             </nav>
+
             <div className='heading'>
-                <Container>
-                <div className='d-flex flex-row justify-content-between'>
-                <div className='col left-col'>
+            <Container>
+                <div className='row d-flex flex-row flex-wrap justify-content-start'>
                     <section className='mt-3'>
-                    <div className='row'>
-                        <div className='col'>
-                            <div className='row'>
-                                <div className='col'>
-                                    <img alt="pfp" />
-                                </div>
-                            </div>
-                            <div className='row'>
-                                <div className='col'>
-                                    <p>First Name</p>
-                                </div>
-                                <div className='col'>
-                                    <p>Last Name</p>
-                                </div>
-                            </div>
+                        <div className='d-flex flex-column align-items-start'>
+                            <img alt="pfp" />
+                            <p>First, Last</p>
                         </div>
-                        <div className='col'>
-                            <Signin name="Test Username" />
+                        <div className='d-flex flex-column align-items-end'>
+                            <Signin name="Austin Filoteo" />
+                            <button>Temp Button</button>
                         </div>
-                        <div className='row'>
-                            <div className='col'>
-                                <button> Settings </button>
-                            </div>
-                        </div>
-                    </div>
+                    <br />
                     </section>
                 </div>
-                </div>
-                </Container>
+            </Container>
             </div>
             <div className='body'>
                 <br />
-                <Container>
-                    <div className='row'>
-                        <div className='col'>
-                            <MDBCard>
-                                Bio
-                            </MDBCard>
-                            <MDBCard>
-                                Social Media Links
-                            </MDBCard>
+                    <div className='d-flex flex-row flex-wrap flex-grow-1 justify-content-center'>
+                        <div className='d-flex flex-column-reverse justify-content-between' style={{ padding:'10px'}}>
+                            <Bio />
+                            <br />
+                            <Link />
                         </div>
-                        <div className='col'>
-                            <MDBCard>
-                                Fun Facts
-                            </MDBCard>
+                        <div className='d-flex flex-column justify-content-evenly' style={{ padding:'10px'}}>
+                            <FactCard />
                         </div>
                     </div>
-                </Container>
             <br />
             <br />
             </div>

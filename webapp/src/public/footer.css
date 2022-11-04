@@ -2,14 +2,9 @@
     background-color: #141413;
 } 
 .footer-bg{
-    height: 70vh;
+    height: 50vh;
     background-color: #141413;
 }
-.footer-top {
-    height: 20vh;
-    margin-top: 1rem;
-}
-  
 .footer-topic {
     color: #adadad;
     font-size: 0.75rem;
@@ -28,7 +23,7 @@
   
 #footer-email {
     color: #e8e6e6;
-    font-weight: 800;
+    font-weight: 600;
 }
   
 .left-col {
@@ -57,5 +52,24 @@ button a {
     .send-btn {
       width: auto;
     }
+    #footer-email{
+        font-size: small;
+    }
 }
-  
+@media only screen and (min-width: 320px) {
+    .footer-bg{height: 50vh !important;}
+}
+@media only screen and (min-width: 375px) {
+    .footer-bg{height: 40vh !important;}
+}
+@media only screen and (min-width: 425px) {
+    .footer-bg{height: 50vh !important;}
+}
+@media only screen and (min-width: 768px) {
+    .footer-bg{height: 50vh !important;}
+}
+@media only screen and (min-width: 1024px) {
+    .footer-bg{
+        height: 75vh !important;
+    }
+}

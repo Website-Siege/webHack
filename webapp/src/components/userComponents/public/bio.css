@@ -1,0 +1,12 @@
+.bio{
+    background-color: #252424;
+    width: auto;
+    height: fit-content;
+    min-height: 40vh !important;
+}
+@media only screen and (min-width: 1024px){
+    .bio{
+        width: auto;
+        min-height: 40vh !important;
+    }
+}
