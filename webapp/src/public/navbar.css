@@ -7,11 +7,36 @@
 .logo{
     color: azure;
 }
+
+.logo::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c92d22;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.logo:hover::after{
+    width: 100%;
+}
 .logo:hover{
     color: gray !important;
 }
 .navi{
     color: azure;
+}
+.navi::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c92d22;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navi:hover::after{
+    width: 100%;
 }
 .navi:hover{
     color: gray !important;
