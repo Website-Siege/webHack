@@ -1,0 +1,59 @@
+.navigate{
+    color: azure !important;
+}
+.bg{
+    background-color: #141413;
+}
+.logo{
+    color: azure;
+}
+
+.logo::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c92d22;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.logo:hover::after{
+    width: 100%;
+}
+.logo:hover{
+    color: gray !important;
+}
+.navi{
+    color: azure;
+}
+.navi::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c92d22;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navi:hover::after{
+    width: 100%;
+}
+.navi:hover{
+    color: gray !important;
+}
+.dots{
+    font-size: 2rem;
+    color: grey;
+}
+@media screen and (max-width: 992px){
+    .dots{
+        display: none;
+    }
+}
+.toggler{
+    background-color: darkolivegreen !important;
+}
+.toggler:hover{
+    transition: 0.25s;
+    background-color: brown !important;
+}
