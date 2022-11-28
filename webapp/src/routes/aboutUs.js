@@ -2,33 +2,28 @@ import React from 'react';
 import '../public/about.css';
 import Navigation from '../components/navbar';
 import saseLogo from '../public/images/sase.png';
+import grandma from '../public/images/grandma.jpg';
 import Footer from '../components/footer';
 
 function About(){
     return(
+        <section className = "header">
         <div className='about'>
             <nav>
                 <Navigation />
             </nav>
-            
-            <h1 className='title'>
-                <center>
-                    Ban Sauce  
-                </center>
-            </h1>
-
+            <br></br>
 
             <p className='dash'>
-                <center>
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    
-                    
-                </center>
-                <center><img src = {saseLogo} alt="" className='photo' /></center>
-                
+                <center><img src = {saseLogo} alt="" className='photo' /></center>                
             </p>
             
             
+            <p className="objective">
+                <center>
+                    <b>Objective</b>
+                </center>
+            </p>
 
             <p className='introduction'>
 
@@ -41,64 +36,76 @@ function About(){
                     
                 </center>
             </p>
+        </div>
 
-            <p className='MeetUs'>
-                <center>Meet Us</center>
-            </p>
+        <section className = "team">
+                    <h1>Meet Us</h1>
+
+            <div class="row">
+                <div class="col">
+                    <img src = {grandma}></img>
+                    <div class="layer">
+                        <h3> Marlon "Mj" Burog</h3>
+                        <p>
+                        He's like that
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src = {grandma}></img>
+                    <div class="layer">
+                        <h3> Marlon "Mj" Burog</h3>
+                        <p>
+                        He's like that
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src = {grandma}></img>
+                    <div class="layer">
+                        <h3> Marlon "Mj" Burog</h3>
+                        <p>
+                        He's like that
+                        </p>
+                    </div>
+                </div>
+            </div>
             
-            {/*<img src = {saseLogo} alt="" className='photo' />*/}
-
-            <p className='section'>
-                <h2 className='names'>
-                    Marlon Burog(MJ)
-                </h2>
-                <ul className='bulletPoint'>
-                    <li>Sophomore</li>
-                    <li>Major: Software Engineer</li>
-                    <li>Experienced in Kickstarter</li>
-                    <li>Hobbies: Boxing/Coding/Martial Arts</li>
-                </ul>
-            </p>
-
-            <p className='section'>
-                <h2 className='names'>
-                    Brandon Ritchie
-                </h2>
-                <ul className='bulletPoint'>
-                    <li>Sophomore</li>
-                    <li>Major: Computer Engineer</li>
-                    <li>First time participating in Kickstarter</li>
-                    <li>Hobbies: Archery/Gaming/Driving</li>
-                </ul>
-            </p>
-
-            <p className='section'>
-                <h2 className='names'>
-                    Austin Huang
-                </h2>
-                <ul className='bulletPoint'>
-                    <li>Sophomore</li>
-                    <li>Major: Computer Engineer</li>
-                    <li>First time participating in Kickstarter</li>
-                    <li>Hobbies: Archery/Basketball/Watching Anime/Music</li>
-                </ul>
-            </p>
-
-            <p className='section'>
-                <h2 className='names'>
-                    Benjamin Filoteo
-                </h2>
-                <ul className='bulletPoint'>
-                    <li>Sophomore</li>
-                    <li>Major: Applied Mathematics</li>
-                    <li>First time participating in Kickstarter</li>
-                    <li>Hobbies: Minecraft/Sleep/Drinking Milk(not kidding)</li>
-                </ul>
-            </p>
-            <footer>
+            <div class="row">
+                <div class="col">
+                    <img src = {grandma}></img>
+                    <div class="layer">
+                        <h3> Marlon "Mj" Burog</h3>
+                        <p>
+                        He's like that
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src = {grandma}></img>
+                    <div class="layer">
+                        <h3> Marlon "Mj" Burog</h3>
+                        <p>
+                        He's like that
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src = {grandma}></img>
+                    <div class="layer">
+                        <h3> Marlon "Mj" Burog</h3>
+                        <p>
+                        He's like that
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
                 <Footer />
             </footer>
-        </div>
+        </section>
     )
 }
 
