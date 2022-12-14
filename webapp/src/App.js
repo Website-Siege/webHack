@@ -5,6 +5,7 @@ import Main from './main';
 import Login from './components/loginComponents/loginPage';
 import Contact from './routes/contact';
 import About from './routes/aboutUs';
+import Fetch from './components/userComponents/components/fetch';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/login" element={<Login />} />
 	      <Route exact path="/about" element={<About />} />
 	      <Route exact path="/contact"  element={<Contact />} />
+        <Route exact path="/fetch" element={<Fetch />}/>
       </Routes>
     </Router>
   );
