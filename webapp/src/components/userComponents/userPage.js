@@ -22,7 +22,7 @@ class User extends React.Component{
                     <section className='mt-3'>
                         <div className='d-flex flex-column align-items-start'>
                             <img alt="pfp" />
-                            <p>First, Last</p>
+                            <p>{this.props.name}</p>
                         </div>
                         <div className='d-flex flex-column align-items-end'>
                             <Signin name="Austin Filoteo" />

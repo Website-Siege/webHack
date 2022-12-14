@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {Container} from 'react-bootstrap';
 import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 import Navigation from '../components/navbar';
 import Footer from '../components/footer';
@@ -22,7 +21,6 @@ function LoginForm({ Login, error }) {
 				<Navigation />
 			</nav>
 			<div className='loginPage'>
-
 					{/* Form rendering, onChange to listen for user events(inputs), setDetails is updated for details to be updated into condition in loginPage.js*/}
 					<div className="form-inner">
 						<MDBContainer fluid>

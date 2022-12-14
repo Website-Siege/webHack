@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LoginForm from '../../routes/loginForm';
 import User from '../userComponents/userPage';
+import Fetch from '../userComponents/components/fetch';
 
 //logic for the for loginform
 function Login(){
@@ -13,7 +14,7 @@ function Login(){
 	const [user, setUser] = useState({name:"", email:""});
 	const [error, setError] = useState("");
 	//Login declaration to check user information and update useStates when conditions are met
-	
+
 	const Login = details => {
 		console.log(details);
 		//if user info is true update setUser state to details(event listener on loginForm.js)
@@ -39,7 +40,7 @@ function Login(){
 		<div className="Login">
 			{/*if email isn't empty string, render user page */}
 			{(user.email !== "") ? (
-				<User logOut={logout}/>
+				<Fetch />
 			) : (
 				<LoginForm Login={Login} error={error}/> //else return login page with an error
 			)}
