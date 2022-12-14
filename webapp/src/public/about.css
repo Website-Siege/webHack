@@ -1,20 +1,25 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav{
+    background-color: #c92d22;
+}
 .about{
-    background-color: #363434;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../public/images/Nature.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
-
-.about > .title{
-    font-size: 80px; 
-    font-family: "Brush Script MT", cursive;
-    color: rgb(248, 222, 222) !important;
-    text-shadow: 0px 2px 4px red;
-    background-color: #363434;
-
-}
-
 .photo{
     width: 50vw;
     height: auto;
     margin-bottom: 10px;
+}
+.about > .objective{
+    font-size: 30px;
+    color: #fff;
 }
 
 .about > .introduction{
@@ -22,51 +27,77 @@
     margin-left: 10%;
     margin-right: 10%;
     color: white;
-
+    background-color: rgba(25, 99, 143, 0.5) ;
 }
 
-.about > .MeetUs{
-    font-size: 50px ; 
-    color: white;
+.team{
+    background-color: #363434;
+    font-size: 36px;
+    color: #fff;
+    width:100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
 }
 
 
-
-.dash{
-    color: white;
-}
-
-.about > .section{
-    margin-left: 5%;
-    margin-right: 70%;
+.col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
     position: relative;
-	border-radius: .4em;
-    color: white;
-
+    overflow: hidden;
 }
 
-.about > .section:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 9px solid transparent;
-	border-bottom-color: white;
-	border-top: 0;
-	margin-left: -9px;
-	margin-top: -9px;
+.col img{
+    width: 100%;
+    height: 100%;
 }
 
-
-.about > .section > .names{
-    font: 200;
-    background-color: #141413;
-    
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s;
 }
-.about > .section > .names > .bulletPoint{
-    list-style-position: outside;
-    border: 1px solid #000040;
-    background-color: #141413 !important;
+
+.layer:hover{
+    background: rgba(25, 99, 143, 0.7);
+    display: block;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer p{
+    width: 100%;
+    font-weight: 500;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover p{
+    opacity: 1;
+}
+.layer:hover h3{
+    opacity: 1;
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction:  column;
+    }
 }
