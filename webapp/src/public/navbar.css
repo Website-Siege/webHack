@@ -25,6 +25,7 @@
 }
 .navi{
     color: azure;
+    margin: auto;
 }
 .navi::after{
     content: '';

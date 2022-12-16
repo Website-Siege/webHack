@@ -7,7 +7,7 @@ import '../public/loginForm.css';
 //loginForm function, takes in login and error props from loginPage.js
 function LoginForm({ Login, error }) {
 	//details useState gets returned to Login const in loginPage.js for event listener if-else comparison
-	const [details, setDetails] = useState({ name: "", email: "", password: "" });
+	const [details, setDetails] = useState({ username: "", password: "" });
 
 	//event handler const declaration
 	const submitHandler = e => {
@@ -34,7 +34,7 @@ function LoginForm({ Login, error }) {
 												<form>
 													<div classname="form-group">
 														<label htmlFor="email">Username:</label>
-														<input type="email" name="email" id="email" required onChange={e => setDetails({ ...details, email: e.target.value })} value={details.email} />
+														<input type="username" name="username" id="username" required onChange={e => setDetails({ ...details, username: e.target.value })} value={details.username} />
 													</div>
 													{/*<MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Username' id='formControlLg' type='username' size="lg"/>*/}
 													<div classname="form-group">
