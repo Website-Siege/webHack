@@ -9,7 +9,6 @@ class Link extends React.Component{
                 <MDBCard className='links'>
                     <MDBCardHeader className='text-light'>Links</MDBCardHeader>
                     <MDBCardBody>
-                        <MDBCardTitle className='text-light'>Sample Text Input</MDBCardTitle>
                         <MDBCardText className='text-light'>{this.props.links}</MDBCardText>
                     </MDBCardBody>
                 </MDBCard>

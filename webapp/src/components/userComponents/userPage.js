@@ -22,10 +22,9 @@ class User extends React.Component{
                         <section className='mt-3'>
                             <div className='d-flex flex-column align-items-start'>
                                 <img alt="pfp" />
-                                <p>Name: {this.props.first}, {this.props.last}</p>
+                                <p>{this.props.first}, {this.props.last}</p>
                             </div>
                             <div className='d-flex flex-column align-items-end'>
-                                {/*<Signin name="Austin Filoteo" />*/}
                                 <p>{this.props.username}</p>
                                 <button onClick={this.props.logOut}>Logout</button>
                             </div>

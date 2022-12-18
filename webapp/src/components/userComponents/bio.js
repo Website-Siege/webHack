@@ -9,7 +9,6 @@ class Bio extends React.Component{
                 <MDBCard className='bio'>
                     <MDBCardHeader className='text-light'>Biography</MDBCardHeader>
                     <MDBCardBody>
-                        <MDBCardTitle className='text-light'>Sample Text Here</MDBCardTitle>
                         <MDBCardText className='text-light'>{this.props.bio}</MDBCardText>
                     </MDBCardBody>
                 </MDBCard>

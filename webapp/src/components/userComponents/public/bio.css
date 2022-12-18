@@ -1,12 +1,13 @@
 .bio{
     background-color: #252424;
-    width: auto;
-    height: fit-content;
-    min-height: 40vh !important;
+    width: 100%;
+    min-height: 30vh;
+    max-width: 40vh;
 }
 @media only screen and (min-width: 1024px){
     .bio{
         width: auto;
-        min-height: 40vh !important;
+        min-height: 30vh !important;
+        max-width: 45vh !important;
     }
 }

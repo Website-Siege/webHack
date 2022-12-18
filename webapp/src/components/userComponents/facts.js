@@ -10,8 +10,9 @@ class FactCard extends React.Component{
                 <MDBCard className='facts'>
                     <MDBCardHeader className='text-light'>Facts</MDBCardHeader>
                     <MDBCardBody>
-                        <MDBCardTitle className='text-light'>Sample Text Input</MDBCardTitle>
-                        <MDBCardText className='text-light'>{this.props.facts}</MDBCardText>
+                        <MDBCardText className='text-light'>
+                            <ol>{this.props.facts}</ol>
+                        </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
             </div>
