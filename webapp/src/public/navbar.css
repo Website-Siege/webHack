@@ -6,6 +6,7 @@
 }
 .logo{
     color: azure;
+    font-family: "Bahnschrift"
 }
 
 .logo::after{
@@ -52,9 +53,9 @@
     }
 }
 .toggler{
-    background-color: darkolivegreen !important;
+    background-color: transparent !important;
 }
 .toggler:hover{
-    transition: 0.25s;
-    background-color: brown !important;
+    transition: 0.5s;
+    background-color: #c92d22 !important;
 }

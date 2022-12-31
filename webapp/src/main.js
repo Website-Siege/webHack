@@ -1,38 +1,44 @@
 import React from 'react';
 import './public/main.css';
+import './public/index.css';
 import Navigation from './components/navbar';
-import sauceIcon from './public/images/sauceicon.png';
+import Card from './components/cardDefault';
+import { useNavigate } from 'react-router-dom';
 
 function Main(){
+    const nav = useNavigate();
+    const route = () => {
+        nav('/contact');
+    }
     return(
-        <div className='main'>
-            <head>
-                <title>Penguin Pears Inc.</title>
-            </head>
+        <div>
             <nav>
                 <Navigation />
             </nav>
-
-            <div className='title' id='title'>
-                    Ban Sauce Inc.
-            </div>
-
-            <div className='logoIcon'>
-
-                <img src={sauceIcon} alt='Sauce Icon Placeholder' />
-
-            </div>
-
-            <div className='contentOne'>
-                S Tier Sauce
-
-            </div>
-
-            <div className='contentTwo'>
-                The Sauce to Sauce Up Your Sauce
+                    <div className='bannerSection' >
+                        <div style={{paddingTop: '0px'}}></div>
+                        <h1>Banana Sauce You Can Count On</h1>
+                        <button className='mainButt' onClick={route}>Contact Us to Order</button>
+                        <div style={{paddingBottom: '33px'}}></div>
+                    </div> 
+                <div className='cardSection bg-dark bg-gradient'>
+                    <br />
+                    <br />
+                        <div className='d-flex flex-row flex-wrap justify-content-evenly'>
+                            <div className='d-flex flex-column'>
+                                <Card title={"Jufran mmmmm "} content={"Sweet banana sauce: contact to order"}/>
+                                <br />
+                            </div>
+                            <div className='d-flex flex-column'>
+                                <Card style={{paddingBottom: '10px'}} title={"that other brand"} content={"Sweet banana sauce: contact to order"}/>                            
+                                <br />
+                            </div>
+                        </div>
+                    <br />
+                    <br />
+                    <br />
             </div>
         </div>
-
     )
 }
 

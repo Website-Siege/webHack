@@ -20,7 +20,7 @@ function LoginForm({ Login, error }) {
 			<nav>
 				<Navigation />
 			</nav>
-			<div className='loginPage'>
+			<div className='loginPage bg-dark bg-gradient'>
 					{/* Form rendering, onChange to listen for user events(inputs), setDetails is updated for details to be updated into condition in loginPage.js*/}
 					<div className="form-inner">
 						<MDBContainer fluid>
@@ -28,24 +28,22 @@ function LoginForm({ Login, error }) {
 								<MDBCol col='12'>
 									<MDBCard className='loginCard my-5 mx-auto' style={{ borderRadius: '1rem', maxWidth: '400px' }}>
 										<MDBCardBody className='p-5 d-flex flex-column align-items-center mx-auto w-100'>
-											<h2 className="fw-bold mb-2 text-uppercase">Login</h2>
-											<p className="text-white-50 mb-5">Please enter your login and password!</p>
+											<h2 className="fw-bold text-uppercase">Login</h2>
+											<p className="loginText text-white-50">Please enter your login and password!</p>
 											<div className='d-flex flex-row justify-content-center'>
 												<form>
 													<div classname="form-group">
 														<label htmlFor="email">Username:</label>
 														<input type="username" name="username" id="username" required onChange={e => setDetails({ ...details, username: e.target.value })} value={details.username} />
 													</div>
-													{/*<MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Username' id='formControlLg' type='username' size="lg"/>*/}
 													<div classname="form-group">
 														<label htmlFor="password">Password:</label>
 														<input type="password" name="password" id="password" required onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
-														{/*<MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Password' id='formControlLg' type='password' size="lg" /> */}
 													</div>
 												</form>
 											</div>
 											<p className="small mb-3 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
-											<input type="submit" value="Login" />
+											<input className='loginButt' type="submit" value="Login" />
 											{(error !== "") ? (<div className="error" style={{color:'#c7423a'}}>{error}</div>) : ""}
 											<div className='d-flex flex-row mt-3 mb-5'>
 												<MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>
@@ -58,7 +56,7 @@ function LoginForm({ Login, error }) {
 													<MDBIcon fab icon='google' size="lg" />
 												</MDBBtn>
 											</div>
-											<div>
+											<div className='loginFooter'>
 												<p className="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>
 											</div>
 										</MDBCardBody>
@@ -74,6 +72,4 @@ function LoginForm({ Login, error }) {
 		</form>
 	)
 }
-export default LoginForm
-
-{/* 8:04  yt vid   */ }
+export default LoginForm;

@@ -32,12 +32,13 @@
 
 .team{
     background-color: #363434;
+    background-size: 100%;
     font-size: 36px;
     color: #fff;
     width:100%;
+    height: auto;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
 }
 
 
@@ -95,9 +96,11 @@
 .layer:hover h3{
     opacity: 1;
 }
-
-@media(max-width: 700px){
-    .row{
-        flex-direction:  column;
+@media only screen and (max-width: 375px){
+    /* look at this to help fix spacing in mobile formatting*/
+    .team{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }

@@ -17,11 +17,11 @@ import Footer from '../components/footer';
 
 function Contact() {
   return (
-    <div className="background">
+    <div className="background bg-dark bg-gradient">
     <div>
     <nav><Navigation /></nav>
     </div>
-    <MDBContainer fluid style={{borderRadius: "1rem"}}>
+    <MDBContainer fluid className='formContainer'>
       <MDBRow className='d-flex justify-content-center align-items-center h-100'>
         <MDBCol col='12'>
 
@@ -31,9 +31,9 @@ function Contact() {
               <h2 className="fw-bold mb-2 text-uppercase">Contact us</h2>
               <center><p className=" text-white-50 mb-5" >Have an issue or do you really like our sauce? Either way, send us a message!</p></center>
 
-              <MDBInput wrapperClass='mb-4 mx-5 w-100 ' labelClass='text-white' label='Name' id='formControlLg' type='name' size="lg"/>
-              <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white ' label='Email' id='formControlLg' type='email' size="lg"/>
-              <textarea className = "hi" />
+              <MDBInput wrapperClass='mb-4 mx-5 w-100 ' labelClass='text-white' label='Name' id='formControlLg' type='name' size="lg" />
+              <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white ' label='Email' id='formControlLg' type='email' size="lg" />
+              <MDBInput className='messageForm' wrapperClass='mb-4 mx-5 w-100' labelClass='text-white ' label='Message' id='formControlLg' type='message' size='lg' />
               <button className="submitB">Submit</button>
               <div className='d-flex flex-row mt-3 mb-5'>
                 <MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCard, MDBCardHeader, MDBCardBody, MDBCardTitle, MDBCardText } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardHeader, MDBCardBody, MDBCardText } from 'mdb-react-ui-kit';
 import './public/facts.css';
 
 //Fact MDBCard Component for User Page
@@ -8,10 +8,10 @@ class FactCard extends React.Component{
         return(
             <div>
                 <MDBCard className='facts'>
-                    <MDBCardHeader className='text-light'>Facts</MDBCardHeader>
+                    <MDBCardHeader className='text-light' style={{fontFamily: 'Bahnschrift'}}>Facts</MDBCardHeader>
                     <MDBCardBody>
                         <MDBCardText className='text-light'>
-                            <ol>{this.props.facts}</ol>
+                            {this.props.facts}
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>

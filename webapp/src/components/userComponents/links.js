@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCard, MDBCardHeader, MDBCardBody, MDBCardTitle, MDBCardText } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardHeader, MDBCardBody, MDBCardText } from 'mdb-react-ui-kit';
 import './public/links.css';
 
 class Link extends React.Component{
@@ -7,7 +7,7 @@ class Link extends React.Component{
         return(
             <div>
                 <MDBCard className='links'>
-                    <MDBCardHeader className='text-light'>Links</MDBCardHeader>
+                    <MDBCardHeader className='text-light' style={{fontFamily: 'Bahnschrift'}}>Links</MDBCardHeader>
                     <MDBCardBody>
                         <MDBCardText className='text-light'>{this.props.links}</MDBCardText>
                     </MDBCardBody>

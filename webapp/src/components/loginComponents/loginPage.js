@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import LoginForm from '../../routes/loginForm';
 import User from '../userComponents/userPage';
 import Users from '../../usr/users.json';
-import Bio from '../userComponents/bio';
-import Link from '../userComponents/links';
-import FactCard from '../userComponents/facts';
 
-//logic for the for loginform
+//logic for the loginform
 function Login(){
 	//Login declaration to check user information and update useStates when conditions are met
 	let adminUser = {

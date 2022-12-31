@@ -1,10 +1,11 @@
 .form-container{
     height: 100vh;
     width: 95vw;
+    border-radius: 10px !important;
 }
- .hi{
+ .messageForm{
     height: 200px;
-    width: 305px;
+    width: 100%;
     border-radius: 10px;
  }
  .background{
@@ -12,48 +13,29 @@
     background-position: top right;
     background-size: auto;
 }
-.fonts{
-    font-family: "Arial", sans-serif;
-    color: #e8e6e6  ;
-}
 
 .boxcolor{
-    background-color: #141413 ;
-}
-
-.cf{
-
-    width: 40vw;
-    margin: 0 auto;
+    background-color: #141413;
+    box-shadow: 0px 5px 7px black;
 }
 
 
-.names{  
+.name{  
     position: relative; 
     top: 10vh;
     left: 25vw;
     font-family: "Arial ",  sans-serif;
 } 
-.submitB{
-    font-family: "Arial", sans-serif;
-    position: relative;
-    background-color: #141413 ;   
-    color: white;
-    top: 40px;
-    border-radius: 10px;
-    right: 120px;
-}
-
 .email{
     position: flex;
     top: 15vh;
     left: 23vw;
     font-family: "Arial ",  sans-serif;
 }
-
-.reqRect{
-    background-color: #e8e6e6;
-
+.messageTag{
+  text-align: left !important;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 414px) {
@@ -72,4 +54,33 @@
     footer.contactFooter {
       padding-top: 20rem;
     }
+    }
+    .submitB {
+      padding: 15px 45px;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 10px;
+      display: block;
+      border: 0px;
+      font-weight: 600;
+      font-size: 10px;
+      box-shadow: 0px 0px 14px -7px #f09819;
+      background-image: linear-gradient(45deg, #FF512F 0%, var(--quarternary)  51%, #FF512F  100%);
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .submitB:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .submitB:active {
+      transform: scale(0.95);
     }

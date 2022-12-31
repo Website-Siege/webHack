@@ -1,0 +1,30 @@
+div{
+    --primary: #363434;
+    --secondary: #141413;
+    --tertiary: #e8e6e6;
+    --quarternary: #c92d22;
+}
+.aboutCard{
+    background: #5c5c5c;
+    border: 20px;
+    max-width: 40vh;
+    min-width: 30vh;
+    box-shadow: 0px 5px 7px black;
+}
+.topRow{
+    padding-bottom: 25px;
+}
+.botRow{
+    padding-bottom: 25px;
+}
+.aboutImage{
+    width: fit-content;
+    height: 125px;
+    margin: auto;
+}
+.aboutText{
+    font-size: small;
+}
+.positionName{
+    font-size: x-small;
+}

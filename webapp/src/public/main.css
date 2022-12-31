@@ -1,175 +1,53 @@
-.main{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: #363434
+div{
+    --primary: #363434;
+    --secondary: #141413;
+    --tertiary: #e8e6e6;
+    --quarternary: #c92d22;
 }
-
-
-.title{
-    font-size: 100px;
-    font-family: Comic ;
-    font-weight: bold;
-    color:#c92d22;
+.bannerSection{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(./images/company.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--tertiary);
     text-align: center;
-    padding: 10px;
+    box-shadow: 0px 5px 7px black;
+}
+.bannerSection > h1{
+    padding-top: 10vh;
+    font-size: x-large;
+    font-family: "Bahnschrift"
+}
+.cardSection{
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
+.bannerSection > .mainButt {
+  margin: auto;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 600;
+  font-size: 10px;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, var(--quarternary)  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.contentOne{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60px;
-    margin-top: 24px;
-    margin-bottom: 15px;
-    margin-top: 130px;
-    margin-left: 140px;
-    color: #e8e6e6 
-    }
-
-.contentTwo{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 50px;
-    font-size: 30px;
-    color: #e8e6e6
-    }
-
-
-.logoIcon > img{
-    float: right;
-    display: block;
-    max-width: 100%;
+.mainButt:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
-@media (max-width: 480px) {
-    .title{
-        font-size: 40px;
-        background-color: red;
-
-    }
-
-    .contentOne {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-left: 30px;
-    }
-
-    .contentTwo {
-        font-size: 10px;
-        margin-left: 15px;
-    }
-
-    .logoIcon > img{
-        display: block;
-        max-width: 100%;
-        width: 100px;
-        height: auto;
-    }
-
-}
-@media (min-width: 481px) and (max-width: 767px) {
-    .title{
-        font-size: 60px;
-        background-color: yellow;
-    }
-
-    .contentOne {
-        font-size: 30px;
-        margin-top: 30px;
-        margin-left: 60px;
-    }
-
-    .contentTwo {
-        font-size: 15px;
-        margin-left: 35px;
-    }
-    .logoIcon > img {
-        display: block;
-        width: 200px;
-        height: auto;
-        margin-right: 40px;
-        margin-top: 10px;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .title{
-        font-size: 80px;
-        background-color: blue;
-    }
-
-    .contentOne {
-        font-size: 40px;
-        margin-top: 50px;
-        margin-left: 100px;
-    }
-
-    .contentTwo {
-        font-size: 20px;
-        margin-left: 50px;
-    }
-    .logoIcon > img {
-        display: block;
-        max-width: 100%;
-        width: 350px;
-        height: auto;
-        margin-right: 50px;
-        margin-top: 15px;
-    }
-}
-
-
-
-@media (min-width: 1025px) and (max-width:1280px ) {
-    .title{
-        font-size: 100px;
-        background-color: green;
-    }
-
-    .contentOne {
-        font-size: 50px;
-        margin-top: 100px;
-        margin-left: 150px;
-    }
-
-    .contentTwo {
-        font-size: 30px;
-        margin-left: 80x;
-    }
-    .logoIcon > img {
-        display: block;
-        width: 500px;
-        height: auto;
-        margin-right: 5px;
-        margin-top: 25px;
-    }
-}
-
-@media (min-width: 1281px){
-    .title{
-        font-size: 120px;
-        background-color: white;
-    }
-
-    .contentOne {
-        font-size: 60px;
-        margin-top: 120px;
-        margin-left: 140px;
-    }
-
-    .contentTwo {
-        font-size: 40px;
-        margin-left: 60px;
-    }
-    .logoIcon > img {
-        display: block;
-        width: 550px;
-        height: auto;
-        margin-right: 15px;
-        margin-top: 20px;
-    }
-}
-@media only screen and (max-width: 414px) {
-    footer.mainFooter{
-      padding-top: 40rem;
-    }
+.mainButt:active {
+  transform: scale(0.95);
 }
