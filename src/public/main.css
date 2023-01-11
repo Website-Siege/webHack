@@ -1,0 +1,53 @@
+div{
+    --primary: #363434;
+    --secondary: #141413;
+    --tertiary: #e8e6e6;
+    --quarternary: #c92d22;
+}
+.bannerSection{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(./images/company.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--tertiary);
+    text-align: center;
+    box-shadow: 0px 5px 7px black;
+}
+.bannerSection > h1{
+    padding-top: 10vh;
+    font-size: x-large;
+    font-family: "Bahnschrift"
+}
+.cardSection{
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
+.bannerSection > .mainButt {
+  margin: auto;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 600;
+  font-size: 10px;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, var(--quarternary)  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.mainButt:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.mainButt:active {
+  transform: scale(0.95);
+}

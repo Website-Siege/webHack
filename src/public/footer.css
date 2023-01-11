@@ -1,0 +1,74 @@
+.footerPage{
+    background-color: #141313;
+    max-height: 350px;
+} 
+.footer-bg{
+    background-color: #141413;
+    max-height: 350px;
+}
+.footer-topic {
+    color: #adadad;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+  
+.footer-subtext {
+    text-decoration: none;
+    color: #e8e6e6;
+    font-size: 1rem;
+    display: block;
+}
+  
+#footer-email {
+    color: #e8e6e6;
+    font-weight: 600;
+}
+  
+.left-col {
+    padding-left: 5vw;
+}
+  
+.left-col-right {
+    padding-right: 15vw;
+}
+  
+.send-btn {
+    background-color: #e8e6e6;
+    height: 9vh;
+    width: 12vw;
+    font-weight: 700;
+    border-radius: 10px;
+}
+  
+button a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: grey;
+}
+  
+@media only screen and (max-width: 414px) {
+    .send-btn {
+      width: auto;
+    }
+    #footer-email{
+        font-size: small;
+    }
+}
+@media only screen and (min-width: 320px) {
+    .footer-bg{height: 50vh !important;}
+}
+@media only screen and (min-width: 375px) {
+    .footer-bg{height: 40vh !important;}
+}
+@media only screen and (min-width: 425px) {
+    .footer-bg{height: 50vh !important;}
+}
+@media only screen and (min-width: 768px) {
+    .footer-bg{height: 50vh !important;}
+}
+@media only screen and (min-width: 1024px) {
+    .footer-bg{
+        height: 75vh !important;
+    }
+}

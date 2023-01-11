@@ -1,0 +1,14 @@
+.facts{
+    background-color: #252424;
+    width: 100%;
+    min-height: 40vh;
+    max-width: 60vh;
+    box-shadow: 0px 5px 7px black;
+}
+@media only screen and (min-width: 1024px){
+    .facts{
+        width: auto;
+        min-height: 30vh !important;
+        max-width: 45vh !important;
+    }
+}

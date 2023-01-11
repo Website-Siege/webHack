@@ -1,0 +1,108 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav{
+    background-color: #c92d22;
+}
+.about{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../public/images/Nature.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.photo{
+    width: 50vw;
+    height: auto;
+    margin-bottom: 10px;
+}
+.about > .objective{
+    font-size: 30px;
+    color: #fff;
+}
+
+.about > .introduction{
+    border: 1px solid #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    background-color: rgba(25, 99, 143, 0.5) ;
+}
+
+.team{
+    background-color: #363434;
+    background-size: 100%;
+    font-size: 36px;
+    color: #fff;
+    width:100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.col img{
+    width: 100%;
+    height: 100%;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(25, 99, 143, 0.7);
+    display: block;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer p{
+    width: 100%;
+    font-weight: 500;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover p{
+    opacity: 1;
+}
+.layer:hover h3{
+    opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 375px){
+    /* look at this to help fix spacing in mobile formatting*/
+    .team{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

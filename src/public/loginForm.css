@@ -1,0 +1,66 @@
+label{
+    margin: auto;
+    padding-right: 1rem;
+    height: auto;
+    font-weight: bold;
+}
+input{
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.form{
+    display: block;
+    margin: auto;
+    height: auto;
+    color: #e8e6e6 !important;
+}
+.loginPage{
+    background-color: #363434;
+    color: #e8e6e6 !important;
+}
+.loginCard{
+    background-color: #141413;
+    box-shadow: 0px 5px 7px black;
+}
+.loginText{
+    text-align: center;
+}
+.loginFooter{
+    text-align: center;
+}
+.input-container{
+    margin: auto;
+    padding: 0.5rem;
+}
+.loginButt {
+    width: 50%;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 600;
+    font-size: 10px;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, var(--quarternary)  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .loginButt:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .loginButt:active {
+    transform: scale(0.95);
+  }
