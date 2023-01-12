@@ -41,7 +41,6 @@
     text-align: center;
 }
 
-
 .col{
     flex-basis: 32%;
     border-radius: 10px;
@@ -96,6 +95,9 @@
 .layer:hover h3{
     opacity: 1;
 }
+
+
+
 @media only screen and (max-width: 375px){
     /* look at this to help fix spacing in mobile formatting*/
     .team{
