@@ -9,7 +9,7 @@ import Ben from '../public/images/members/ben.jpg';
 import Brandon from '../public/images/members/brandon.JPG';
 import Kyle from '../public/images/members/kyle.jpg';
 import Mj from '../public/images/members/mj.JPG';
-import Tyler from '../public/images/members/tyler.JPEG';
+import Tyler from '../public/images/members/tyler.JPG';
 
 function About(){
     return(
@@ -29,8 +29,8 @@ function About(){
                 </p>
                 <p className='introduction'>
                     <center>
-                        For our Kickstarter project, we decided to simulate website hacking. We first create a website with user's login info(user name and password)
-                        We then split into two teams, Defence team focuses on how they can secure the website. Attack team will try to hack the website(steal user's login info)
+                        For our Kickstarter project, we decided to simulate website hacking. We first create a website with user's login info (user name and password)
+                        We then split into two teams, Defence team focuses on how they can secure the website. Attack team will try to hack the website (steal user's login info)
                         A battle between the two teams, if the Defence team were able to stop the Attack team from getting the user's info under a certain amount of time, then 
                         the Defence wins. 
                         If the Attack team is able to get user's login info successfully then the Attack team wins. 

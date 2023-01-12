@@ -1,23 +1,22 @@
 .footerPage{
-    background-color: #141413;
+    background-color: #141313;
+    max-height: 350px;
 } 
 .footer-bg{
-    height: 50vh;
     background-color: #141413;
+    max-height: 350px;
 }
 .footer-topic {
     color: #adadad;
     font-size: 0.75rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
-    margin-bottom: 0;
 }
   
 .footer-subtext {
     text-decoration: none;
     color: #e8e6e6;
     font-size: 1rem;
-    margin: 1rem 0;
     display: block;
 }
   
