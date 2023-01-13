@@ -10,16 +10,12 @@ div{
     max-width: 40vh;
     min-width: 30vh;
     box-shadow: 0px 5px 7px black;
-}
-.topRow{
-    padding-bottom: 25px;
-}
-.botRow{
-    padding-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .aboutImage{
-    width: fit-content;
-    height: 125px;
+    width: 40vh;
+    height: 40vh;
     margin: auto;
 }
 .aboutText{
