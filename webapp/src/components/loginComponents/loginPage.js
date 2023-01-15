@@ -13,7 +13,6 @@ function Login(){
 	let i = 0;
 	const Login = details => {
 		console.log(details);
-		console.log(adminUser.username);
 		for(i; i < Users.length; i++){
 			if(details.username === Users[i].username && details.password === Users[i].password){
 				console.log("Logged In");
@@ -27,8 +26,18 @@ function Login(){
 					links: Users[i].info.links
 				});
 			}
-			else
+			else{
+				setUser({
+					username: "",
+					password: "",
+					first: "",
+					last: "",
+					bio: "",
+					facts: "",
+					links: ""
+				})
 				setError("Incorrect Login");
+			}
 		}
 	}
 	//login credentials in json format

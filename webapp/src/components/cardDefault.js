@@ -8,7 +8,7 @@ class Card extends React.Component{
     render() {
         return(
             <div>
-                <MDBCard className='cardDefault' background='secondary' alt='defaultImage'>
+                <MDBCard className='cardDefault' alt='defaultImage'>
                     <MDBCardImage position='bottom' className='defaultImage' src={sauce} />
                         <MDBCardBody>
                             <MDBCardTitle className='cardTitle text-light'>{this.props.title}</MDBCardTitle>

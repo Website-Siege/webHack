@@ -12,11 +12,10 @@ class User extends React.Component{
     render() {
         return(
             <div className='user'>
+                <div className='heading'>
                 <nav>
                     <Navigation />
                 </nav>
-
-                <div className='heading'>
                 <Container>
                     <div className='d-flex flex-row flex-wrap flex-grow-1 justify-content-center' style={{paddingTop: '30px', paddingBottom: '20px'}}>
                             <div className='d-flex flex-column align-items-start'>

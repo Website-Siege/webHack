@@ -6,13 +6,13 @@ class AboutCard extends React.Component{
     render() {
         return(
             <div>
-                <MDBCard className="aboutCard" background="secondary" alignment="center">
+                <MDBCard className="aboutCard" alignment="center">
                     <MDBCardImage position="top" className='aboutImage' src={this.props.memPic}></MDBCardImage>
                     <MDBCardBody>
                         <MDBCardHeader>
                             <MDBCardTitle>
                                 {this.props.member}
-                                <MDBCardTitle className="positionName text-black-50">{this.props.position}</MDBCardTitle>
+                                <MDBCardTitle className="positionName text-white-50">{this.props.position}</MDBCardTitle>
                             </MDBCardTitle>
                         </MDBCardHeader>
                         <MDBCardFooter>

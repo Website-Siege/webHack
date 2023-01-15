@@ -5,13 +5,14 @@ div{
     --quarternary: #c92d22;
 }
 .cardDefault{
-    background-color: #5c5c5c;
+    background-color: #252424;
     width: 100%;
     height: auto;
     border: 20px;
     max-width: 40vh;
     text-align: left;
     box-shadow: 0px 5px 7px black;
+    font-family: "Bahnschrift"
 }
 @media only screen and (max-width: 320px){
     .cardDefault{
@@ -32,7 +33,7 @@ Link{
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;
+    color: white !important;
     border-radius: 10px;
     display: block;
     border: 0px;
@@ -44,15 +45,14 @@ Link{
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
+}
   
-  .mainButt:hover {
+.mainButt:hover {
     background-position: right center;
     /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
-  }
-  
-  .mainButt:active {
+}
+.mainButt:active {
     transform: scale(0.95);
-  }
+}

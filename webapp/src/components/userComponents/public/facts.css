@@ -9,6 +9,20 @@
     .facts{
         width: auto;
         min-height: 30vh !important;
-        max-width: 45vh !important;
+        max-width: 60vh !important;
+    }
+}
+@media only screen and (min-width: 320px){
+    .facts{
+        width: auto;
+        min-height: 30vh;
+        max-width: 28vh;
+    }
+}
+@media only screen and (min-width: 375px){
+    .facts{
+        width: auto;
+        min-height: 30vh;
+        max-width: 28vh;
     }
 }

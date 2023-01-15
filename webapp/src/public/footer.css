@@ -4,7 +4,7 @@
 } 
 .footer-bg{
     background-color: #141413;
-    max-height: 350px;
+    max-height: max-content;
 }
 .footer-topic {
     color: #adadad;
@@ -19,10 +19,15 @@
     font-size: 1rem;
     display: block;
 }
+.footer-subtext:hover{
+    color: #adadad;
+    transition: 0.2s;
+}
   
-#footer-email {
+.footer-email {
     color: #e8e6e6;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: medium;
 }
   
 .left-col {
@@ -33,18 +38,34 @@
     padding-right: 15vw;
 }
   
-.send-btn {
-    background-color: #e8e6e6;
-    height: 9vh;
-    width: 12vw;
-    font-weight: 700;
+.mainButt {
+    text-decoration: none;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white !important;
     border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 600;
+    font-size: 10px;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, var(--quarternary)  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
   
-button a {
-    font-size: 0.9rem;
+.mainButt:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
     text-decoration: none;
-    color: grey;
+}
+.mainButt:active {
+    transform: scale(0.95);
 }
   
 @media only screen and (max-width: 414px) {
