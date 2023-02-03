@@ -15,7 +15,6 @@ function Login(){
 		console.log(details);
 		for(i; i < Users.length; i++){
 			if(details.username === Users[i].username && details.password === Users[i].password){
-				console.log("Logged In");
 				setUser({
 					username: details.username,
 					password: details.password,
@@ -25,6 +24,8 @@ function Login(){
 					facts: Users[i].info.facts,
 					links: Users[i].info.links
 				});
+				console.log("Logged In");
+				break;
 			}
 			else{
 				setUser({
@@ -56,9 +57,7 @@ function Login(){
 		<div className="Login">
 			{/*if email isn't empty string, render user page */}
 			{(user.username !== "") ? (
-				<div>
-					<User logOut={logout} first={user.first} last={user.last} username={user.username} bio={user.bio} links={user.links} facts={user.facts} />
-				</div>
+				<User logOut={logout} first={user.first} last={user.last} username={user.username} bio={user.bio} links={user.links} facts={user.facts} />
 			) : (
 				<LoginForm Login={Login} error={error}/> //else return login page with an error
 			)}

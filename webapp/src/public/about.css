@@ -107,4 +107,7 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
+    .about{
+        min-height: 100vh;
+    }
 }
